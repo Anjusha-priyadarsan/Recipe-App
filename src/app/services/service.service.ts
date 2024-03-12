@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ServiceService {
-  base_url='http://localhost:8000'
+  base_url='https://recipe-server-1-gi8p.onrender.com'
   constructor(private http:HttpClient) { }
 
   // get users

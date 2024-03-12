@@ -1,0 +1,100 @@
+#nav{
+    height: 745px;
+   background-color: rgb(167, 20, 20);
+}
+#links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    /* margin: 2px; */
+
+}
+hr{
+    color: white;
+}
+a div{
+    text-align: center;
+}
+#banner1{
+    height:100px;
+    background-color: green;
+    /* animation: flash;  */
+    /* referring directly to the animation's @keyframe declaration */
+  /* animation-duration: 2s; */
+}
+/* @media (max-width:500px) {
+
+    #nav{
+        height: 500px;
+    }
+    
+} */
+/* #banner2{
+    font-size: 15px;
+    font-weight: bold;
+    height:80px;
+   background-color: green;
+}
+
+ */
+.anim1{
+    position: relative;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;  
+}
+
+@keyframes example1 {
+    0%   { left:0px; top:0px;}
+    25%  { left:520px; top:0px;}
+    50%  { left:520px; top:300px;}
+    75%  { left:0px; top:300px;}
+    100% { left:0px; top:0px;}
+  }
+
+  .anim2{
+    position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;  
+}
+
+@keyframes example2 {
+    0%   { right:0px; bottom:0px;}
+    25%  { right:520px; bottom:0px;}
+    50%  { right:520px; bottom:300px;}
+    75%  { right:0px; bottom:300px;}
+    100% { right:0px; bottom:0px;}
+  }
+  .anim3{
+    position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;  
+}
+
+@keyframes example3 {
+    0%   { top:0px; right:0px;}
+    25%  { top:300px;right :0px;}
+    50%  { top:300px; right:520px;}
+    75%  { top:0px; right:520px;}
+    100% { right:0px; top:0px;}
+  }
+  .anim4{
+    position: relative;
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;  
+}
+
+@keyframes example4 {
+    0%   { left:0px; bottom:0px;}
+    25%  { left:0px;bottom :300px;}
+    50%  { left:520px; bottom:300px;}
+    75%  { left:520px; bottom:0px;}
+    100% { left:0px; bottom:0px;}
+  }

@@ -1,0 +1,48 @@
+#bg{
+    background-image: url('https://img.freepik.com/premium-photo/ingredients-cooking-food-background-with-herbs-vegetables-top-view-white-background_1040174-1574.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709510400&semt=ais');
+    background-size: 1200px 600px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+       height: 500px;
+    width: 1500px;
+}
+
+*{
+    /* margin: 0; */
+    /* margin-top: 10px; */
+    /* background-color: black; */
+    padding: 0;
+}
+
+
+#anim{
+  transition: .5s ease-out;
+}
+
+#anim:hover{
+  transform: scale(1.07);
+
+}
+
+.img-btn{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+/* Media query for smaller screens */
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 15px;
+    line-height: 2rem;
+  }
+}

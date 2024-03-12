@@ -1,0 +1,82 @@
+<div class="container p-5">
+
+    <div class="row rounded shadow " style="background-image: url(https://i.pinimg.com/736x/1f/2e/d7/1f2ed796410477e1a734a08a516a7c9e.jpg);background-repeat: no-repeat;background-size: cover;">
+        <div class="col-lg-12 p-5">
+            <div class=" p-3">
+                <h1 class="text-center"><span style="color: red;">A</span>dd <span
+                        style="color:rgb(156, 242, 26) ;">N</span>ew<span style="color: yellow;"> R</span>ecipie</h1>
+                <form (ngSubmit)="addRecp()" class="form-floating" [formGroup]="addRecpFormModel">
+                    <div class="text-center">
+                        <label for="p1">
+        
+                            <input (change)="getFile($event)" type="file" id="p1" style="display: none;" formControlName="img">
+                            <img style="border-radius: 50%;" [src]="img" alt="" width="120px">
+                    
+                        </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control mt-3" id="name" placeholder="Image Url"
+                            formControlName="name">
+                        <label for="floatingInput"> Name</label>
+                    </div>
+                    <!-- error message -->
+                    <!-- <div *ngIf="addUserFormModel.get('name')?.errors&&addUserFormModel.get('name')?.touched">
+                        <p class="text-danger">Name inclde only letters and space</p>
+                    </div> -->
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Ingrediants" id="floatingTextarea1" formControlName="ingre"></textarea>
+                        <label for="floatingTextarea">Ingrediants</label>
+                      </div>
+                      <div class="form-floating">
+                        <textarea class="form-control mt-3" placeholder="Ingrediants" id="floatingTextarea2" formControlName="disc"></textarea>
+                        <label for="floatingTextarea">Direction</label>
+                      </div>
+                    
+                     <!-- error message -->
+                     <!-- <div *ngIf="addUserFormModel.get('email')?.errors&&addUserFormModel.get('email')?.touched">
+                        <p class="text-danger">Please enter a valid email </p>
+                    </div> -->
+                    <!-- Example split danger button -->
+                    <!-- <div class=" w-100  mt-3">
+                        <select  formControlName="Type" class="w-100 rounded" name="Type" id="status"
+                            style="background-color: rgb(141, 225, 15);">
+                            <option value="" disabled selected hidden>Type</option>
+                            <option value="Veg">Veg</option>
+                            <option value="Nonveg">Nonveg</option>
+
+
+                        </select>
+                    </div> -->
+                    <div class=" w-100  mt-3">
+                        <select  formControlName="Cat" class="w-100 rounded" name="Cat" id="cat1"
+                            style="background-color: rgb(141, 225, 15);">
+                            <option value="" disabled selected hidden>Category</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Soup">Soup</option>
+                            <option value="Drinks">Drinks</option>
+                            <option value="Others">Others</option>
+
+
+
+
+
+
+                        </select>
+                    </div>
+                    
+
+                    <button type="submit" class="btn btn-danger w-100 mt-5">add </button>
+                </form>
+            </div>
+
+        </div>
+        <!-- <div class="col-lg-6 p-5">
+            <img class="img-fluid w-100"  src="https://t3.ftcdn.net/jpg/06/76/67/98/240_F_676679876_uPJ58OUawtnBXGN5j8Jx6L8BbVczS8md.jpg"
+                alt="">
+        </div> -->
+
+    </div>
+
+</div>

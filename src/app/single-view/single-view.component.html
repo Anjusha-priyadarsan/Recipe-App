@@ -1,0 +1,51 @@
+<div class="container mt-7 shadow " style="background-color: bisque;">
+  <div class="row p-5 ">
+    <div class="text-center">
+      <h1 class="mt-3 text-danger fw-bold"><i>{{singleRecp.name}}</i></h1>
+      <hr>
+
+    </div>
+
+
+
+
+
+
+    <div class="col-lg-6 ">
+
+      <div class="col-lg-12 text-center p-5">
+
+        <img class="img-fluid " [src]="singleRecp.img" alt="">
+
+      </div>
+
+    </div>
+
+    <div class="col-lg-6  p-5 ">
+      <div>
+        <h2 class="text-success">Ingredients:</h2>
+        <ul class="p-2">
+          <ng-container *ngIf="singleRecp.ingrediants">
+            <li *ngFor="let ingredient of singleRecp.ingrediants.split(',')">{{ ingredient }}</li>
+          </ng-container>
+        </ul>
+        <hr>
+        <div>
+          <h2 class="text-success">Directions</h2>
+          <ul class="p-2">
+            <ng-container *ngIf="singleRecp.Description">
+              <li *ngFor="let step of singleRecp.Description.split('\n')">{{ step }}</li>
+            </ng-container>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+</div>
